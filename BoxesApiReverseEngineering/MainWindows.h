@@ -32,6 +32,7 @@ private:
 	Ui::MainWindowsClass	_ui;
 	QNetworkAccessManager *	_networkManager;
 	QSslConfiguration *		_sslConfig;
+	QString					_autToken;
 	// --!Attributs
 
 	// -- CTors & DTor
@@ -53,6 +54,7 @@ private:
 	// -- SignalsAndSlots
 private slots:
 	void					getHomePageTriggered();
+	void					tryLoinTriggered();
 	// --!SignalsAndSlots
 };
 
