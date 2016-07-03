@@ -9,7 +9,19 @@
 #ifndef __MAINWINDOWS_H__
 #define __MAINWINDOWS_H__
 
+//Qt includes
+#include <QtConcurrent>
 #include <QtWidgets/QMainWindow>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
+#include <QSslConfiguration>
+
+//Local includes
+#include "DefinesAndEnums.h"
+#include "WebHelper.h"
+
+//Ui includes
 #include "ui_MainWindows.h"
 
 class						MainWindows : public QMainWindow
@@ -18,6 +30,8 @@ class						MainWindows : public QMainWindow
 	// -- Attributs
 private:
 	Ui::MainWindowsClass	_ui;
+	QNetworkAccessManager *	_networkManager;
+	QSslConfiguration *		_sslConfig;
 	// --!Attributs
 
 	// -- CTors & DTor
@@ -32,7 +46,14 @@ private:
 public:
 
 private:
+	void					connectActions();
+	void					setUpNetwork();
 	// --!Methods
+
+	// -- SignalsAndSlots
+private slots:
+	void					getHomePageTriggered();
+	// --!SignalsAndSlots
 };
 
 #endif//__MAINWINDOWS_H__

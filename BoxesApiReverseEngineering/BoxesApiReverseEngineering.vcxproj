@@ -157,6 +157,7 @@
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindows.cpp" />
+    <ClCompile Include="WebHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWindows.h">
@@ -199,7 +200,9 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DefinesAndEnums.h" />
     <ClInclude Include="GeneratedFiles\ui_MainWindows.h" />
+    <ClInclude Include="WebHelper.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWindows.qrc">

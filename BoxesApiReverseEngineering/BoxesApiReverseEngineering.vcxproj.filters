@@ -50,6 +50,9 @@
     <ClCompile Include="GeneratedFiles\qrc_MainWindows.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="WebHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWindows.h">
@@ -65,6 +68,12 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MainWindows.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefinesAndEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WebHelper.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
