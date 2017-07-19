@@ -88,7 +88,7 @@ void						MainWindows::tryLoinTriggered()
 	QString					postData = QString(BOX_LOGIN_POST_DATA)
 		.arg(this->_autToken.toHtmlEscaped())
 		.arg(QString("nox.aubry@gmail.com").toHtmlEscaped())
-		.arg(QString("r3m!1989n0x"));
+		.arg(QString("*********"));
 
 	newRequest.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
 	newRequest.setRawHeader("origin", "https://box.es");
